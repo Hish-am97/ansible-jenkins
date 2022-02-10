@@ -3,9 +3,6 @@
   tasks:
     - name: install updates
       yum: name=* state=latest
-    - name: install EPEL repo
-      become: yes
-      yum: name=epel-release state=present
     - name: install nginx
       become: yes
       yum: name=nginx state=latest
